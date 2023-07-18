@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wine Prediction Model</title>
+</head>
+<body>
+    <h1>Customer Segments for Entered Wine Data:</h1>
+    <h4>Type in the ingredient contents for your wine:</h4>
+    <form action="/predict" id="wineForm" method="POST">
+        <label for="alcohol">Alcohol:</label>
+        <input type="number" step="0.01" id="alcohol" name="alcohol" required><br>
+
+        <label for="malicAcid">Malic Acid:</label>
+        <input type="number" step="0.01" id="malicAcid" name="malicAcid" required><br>
+
+        <label for="ash">Ash:</label>
+        <input type="number" step="0.01" id="ash" name="ash" required><br>
+
+        <label for="ashAlcanity">Ash Alcanity:</label>
+        <input type="number" step="0.01" id="ashAlcanity" name="ashAlcanity" required><br>
+
+        <label for="magnesium">Magnesium:</label>
+        <input type="number" id="magnesium" name="magnesium" required><br>
+
+        <label for="totalPhenols">Total Phenols:</label>
+        <input type="number" step="0.01" id="totalPhenols" name="totalPhenols" required><br>
+
+        <label for="flavanoids">Flavanoids:</label>
+        <input type="number" step="0.01" id="flavanoids" name="flavanoids" required><br>
+
+        <label for="nonflavanoidPhenols">Nonflavanoid Phenols:</label>
+        <input type="number" step="0.01" id="nonflavanoidPhenols" name="nonflavanoidPhenols" required><br>
+
+        <label for="proanthocyanins">Proanthocyanins:</label>
+        <input type="number" step="0.01" id="proanthocyanins" name="proanthocyanins" required><br>
+
+        <label for="colorIntensity">Color Intensity:</label>
+        <input type="number" step="0.01" id="colorIntensity" name="colorIntensity" required><br>
+
+        <label for="hue">Hue:</label>
+        <input type="number" step="0.01" id="hue" name="hue" required><br>
+
+        <label for="od280">OD280:</label>
+        <input type="number" step="0.01" id="od280" name="od280" required><br>
+
+        <label for="proline">Proline:</label>
+        <input type="number" id="proline" name="proline"><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
+
+
